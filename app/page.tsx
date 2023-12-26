@@ -4,12 +4,19 @@ import { Button } from "@/components/ui/button"
 import { Grid } from "@/components/ui/grid"
 import { Paragraph } from "@/components/ui/paragraph"
 import { Title } from "@/components/ui/title"
-import { Section } from "@/components/section"
+import { Section, sectionVariants } from "@/components/section"
 
 export default function Home() {
   return (
     <div>
-      <div className="w-full max-w-[540px] border-l border-r min-h-screen mx-auto px-4">
+      <div
+        className={sectionVariants({
+          side: "t",
+          spacer: "p",
+          className:
+            "w-full max-w-[540px] border-l border-r min-h-screen mx-auto px-4",
+        })}
+      >
         <section className="flex flex-col gap-4">
           <div>
             <Title className="text-muted-foreground/70" showAs={3}>
