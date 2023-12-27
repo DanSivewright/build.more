@@ -146,7 +146,7 @@ export default function Home() {
             </li>
           </ul>
         </section>
-        <Section className="flex flex-col gap-4">
+        <Section spacer="p" className="flex flex-col gap-4">
           <Title className="text-muted-foreground/70" showAs={3} level={2}>
             <span className="text-primary">Request-driven development.</span> We
             streamline the development process by breaking down projects into
@@ -187,6 +187,13 @@ export default function Home() {
               </Paragraph>
             </div>
           </Grid>
+        </Section>
+        <Section spacer="p">
+          <Title className="text-muted-foreground/70" showAs={3} level={2}>
+            <span className="text-primary">What do we do? </span>
+            We&apos;re the go-to for many founders, startups and agencies for
+            web and mobile apps.
+          </Title>
         </Section>
       </div>
     </div>
