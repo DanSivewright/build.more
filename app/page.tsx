@@ -151,8 +151,204 @@ export default function Home() {
           size="sm"
           className="relative w-full h-[58vh] lg:h-[55vh] xl:h-[45vh]"
         >
-          <div className="p-6 flex gap-6 overflow-x-scroll no-scrollbar w-[calc(100vw-3%)] absolute top-0 left-1/2 -translate-x-1/2">
+          <div className="p-6 flex gap-8 overflow-x-scroll no-scrollbar w-[calc(100vw-3%)] absolute top-0 left-1/2 -translate-x-1/2">
             <div className="rotate-[-1deg] flex flex-col gap-2">
+              <div className="h-[55vh] shadow aspect-video flex rounded-xl overflow-hidden">
+                <div className="h-full card w-1/2 bg-[#1A1A1A]">
+                  <div className="p-10 card-content h-full flex flex-col justify-between">
+                    <div className="flex items-center text-white">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="mr-2 h-4 w-4"
+                      >
+                        <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
+                      </svg>
+                      <span>Acme Inc</span>
+                    </div>
+                    <p className="text-md font-mono text-white">
+                      {`"Build.more has been instrumental in our startup journey.
+                      The dedicated developer and streamlined process have
+                      accelerated our product development. This service has
+                      saved us valuable time and allowed us to iterate on our
+                      ideas rapidly." `}
+                      <span className="font-normal text-xs">- Jake W.</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="h-full w-1/2 bg-white flex flex-col justify-center items-center px-16">
+                  <p
+                    className={titleVariants({
+                      level: 5,
+                    })}
+                    style={{ margin: 0 }}
+                  >
+                    Create an account
+                  </p>
+                  <p className="text-xs text-muted-foreground/60">
+                    Enter your email below to create your account
+                  </p>
+                  <div className="mt-4 flex flex-col gap-2 w-full">
+                    <Input sizing="sm" placeholder="name@example.com" />
+                    <Button size={"sm"}>Sign in with email</Button>
+                    <p className="text-xs my-2 text-center text-muted-foreground/60">
+                      OR CONTINUE WITH
+                    </p>
+                    <Button variant={"outline"} size={"sm"}>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="mr-2"
+                      >
+                        <path
+                          fill="#FFC107"
+                          d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917"
+                        />
+                        <path
+                          fill="#FF3D00"
+                          d="m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691"
+                        />
+                        <path
+                          fill="#4CAF50"
+                          d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44"
+                        />
+                        <path
+                          fill="#1976D2"
+                          d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917"
+                        />
+                      </svg>{" "}
+                      Google
+                    </Button>
+                    <p className="px-8 text-center text-xs text-muted-foreground/60 mt-3">
+                      By clicking continue, you agree to our{" "}
+                      <Link
+                        href="#"
+                        className="underline underline-offset-4 hover:text-primary"
+                      >
+                        Terms of Service
+                      </Link>{" "}
+                      and{" "}
+                      <Link
+                        href="/#"
+                        className="underline underline-offset-4 hover:text-primary"
+                      >
+                        Privacy Policy
+                      </Link>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <Paragraph size="xs" className="text-muted-foreground/60">
+                Authentication
+              </Paragraph>
+            </div>
+            <div className="rotate-[1deg] flex flex-col gap-2">
+              <div className="h-[55vh] shadow aspect-video flex rounded-xl overflow-hidden">
+                <div className="h-full card w-1/2 bg-[#1A1A1A]">
+                  <div className="p-10 card-content h-full flex flex-col justify-between">
+                    <div className="flex items-center text-white">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="mr-2 h-4 w-4"
+                      >
+                        <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
+                      </svg>
+                      <span>Acme Inc</span>
+                    </div>
+                    <p className="text-md font-mono text-white">
+                      {`"Build.more has been instrumental in our startup journey.
+                      The dedicated developer and streamlined process have
+                      accelerated our product development. This service has
+                      saved us valuable time and allowed us to iterate on our
+                      ideas rapidly." `}
+                      <span className="font-normal text-xs">- Jake W.</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="h-full w-1/2 bg-white flex flex-col justify-center items-center px-16">
+                  <p
+                    className={titleVariants({
+                      level: 5,
+                    })}
+                    style={{ margin: 0 }}
+                  >
+                    Create an account
+                  </p>
+                  <p className="text-xs text-muted-foreground/60">
+                    Enter your email below to create your account
+                  </p>
+                  <div className="mt-4 flex flex-col gap-2 w-full">
+                    <Input sizing="sm" placeholder="name@example.com" />
+                    <Button size={"sm"}>Sign in with email</Button>
+                    <p className="text-xs my-2 text-center text-muted-foreground/60">
+                      OR CONTINUE WITH
+                    </p>
+                    <Button variant={"outline"} size={"sm"}>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="mr-2"
+                      >
+                        <path
+                          fill="#FFC107"
+                          d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917"
+                        />
+                        <path
+                          fill="#FF3D00"
+                          d="m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691"
+                        />
+                        <path
+                          fill="#4CAF50"
+                          d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44"
+                        />
+                        <path
+                          fill="#1976D2"
+                          d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917"
+                        />
+                      </svg>{" "}
+                      Google
+                    </Button>
+                    <p className="px-8 text-center text-xs text-muted-foreground/60 mt-3">
+                      By clicking continue, you agree to our{" "}
+                      <Link
+                        href="#"
+                        className="underline underline-offset-4 hover:text-primary"
+                      >
+                        Terms of Service
+                      </Link>{" "}
+                      and{" "}
+                      <Link
+                        href="/#"
+                        className="underline underline-offset-4 hover:text-primary"
+                      >
+                        Privacy Policy
+                      </Link>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <Paragraph size="xs" className="text-muted-foreground/60">
+                Authentication
+              </Paragraph>
+            </div>
+            <div className="flex flex-col gap-2">
               <div className="h-[55vh] shadow aspect-video flex rounded-xl overflow-hidden">
                 <div className="h-full card w-1/2 bg-[#1A1A1A]">
                   <div className="p-10 card-content h-full flex flex-col justify-between">
